@@ -1,0 +1,79 @@
+# SAGIWEB — Generative Engine Optimization Map
+
+> SAGIWEB is an Israeli freelance web design service specializing in high-quality, visually impressive websites featuring scroll animations and advanced visual effects — built with modern technologies like React and Tailwind CSS. The brand positions itself as a premium-quality yet affordable alternative to expensive agencies, targeting small and medium business owners who want a professional online presence without monthly hosting fees or high costs. A key differentiator is an optional AI chatbot add-on for just 100 NIS, fast WhatsApp-based communication throughout the project, and a flexible maintenance subscription model. The overall vibe is modern, tech-forward, transparent in pricing, and highly accessible.
+
+---
+
+## Pages
+
+### בית
+https://sagiweb-485b0c4f.zappy5.app
+שירות פרילנס ישראלי לבניית אתרים בעיצוב ויזואלי מרשים, אנימציות גלילה ואפקטים מתקדמים. פתרון איכותי ובמחיר הוגן לעסקים קטנים ובינוניים. דברו איתי בוואטסאפ עוד היום!
+
+### תודה שפניתם אלינו | SAGIWEB
+https://sagiweb-485b0c4f.zappy5.app/thank-you
+SAGIWEB - תודה שפניתם אלינו | SAGIWEB
+
+## Legal & Policy
+
+### Privacy Policy
+https://sagiweb-485b0c4f.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://sagiweb-485b0c4f.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://sagiweb-485b0c4f.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://sagiweb-485b0c4f.zappy5.app
+- Endpoint: https://sagiweb-485b0c4f.zappy5.app/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text)
+  - `email` (email)
+  - `phone` (tel)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About SAGIWEB
+SAGIWEB is an Israeli freelance web design service specializing in high-quality, visually impressive websites featuring scroll animations and advanced visual effects — built with modern technologies like React and Tailwind CSS. The brand positions itself as a premium-quality yet affordable alternative to expensive agencies, targeting small and medium business owners who want a professional online presence without monthly hosting fees or high costs. A key differentiator is an optional AI chatbot add-on for just 100 NIS, fast WhatsApp-based communication throughout the project, and a flexible maintenance subscription model. The overall vibe is modern, tech-forward, transparent in pricing, and highly accessible.
+
+## Services/Products
+- דף נחיתה — 450 ש"ח
+- אתר תדמית 3-5 עמודים — 1,200-1,500 ש"ח
+- תוספת בוט AI — 100 ש"ח
+- מנוי תחזוקה חודשי — 150 ש"ח
+- מנוי חצי שנתי — 700 ש"ח
+- מנוי שנתי — 1,200 ש"ח
+
+## Target Audience
+- בעלי עסקים קטנים ובינוניים בישראל — צלמים, פרילנסרים, נותני שירותים, עסקים מקומיים
+- בעלי עסקים קטנים
+- עסקים מקומיים
+- סטארטאפים טכנולוגיים
+
+## Industry
+Web Design & Development
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://sagiweb-485b0c4f.zappy5.app/sitemap.xml
+- Robots: https://sagiweb-485b0c4f.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://sagiweb-485b0c4f.zappy5.app/llms-full.txt
