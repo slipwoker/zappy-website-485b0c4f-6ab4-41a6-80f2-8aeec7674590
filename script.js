@@ -1412,6 +1412,82 @@ window.onload = function() {
 })();
 
 
+/* Added Component Script */
+(function() {
+  const carousel = document.querySelector('.website-carousel');
+  if (!carousel) return;
+
+  const slides = carousel.querySelectorAll('.carousel-slide');
+  const dots = carousel.querySelectorAll('.carousel-dot');
+  let currentSlide = 0;
+  let intervalId;
+
+  function goToSlide(index) {
+    slides.forEach(slide => slide.classList.remove('carousel-slide-active'));
+    dots.forEach(dot => {
+      dot.classList.remove('carousel-dot-active');
+      dot.setAttribute('aria-selected', 'false');
+    });
+
+    slides[index].classList.add('carousel-slide-active');
+    dots[index].classList.add('carousel-dot-active');
+    dots[index].setAttribute('aria-selected', 'true');
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    const next = (currentSlide + 1) % slides.length;
+    goToSlide(next);
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    intervalId = setInterval(nextSlide, 4000);
+  }
+
+  function stopAutoplay() {
+    if (intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+    }
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', function() {
+      const index = parseInt(this.getAttribute('data-index'), 10);
+      goToSlide(index);
+      stopAutoplay();
+      startAutoplay();
+    });
+  });
+
+  // Pause autoplay on hover
+  carousel.addEventListener('mouseenter', stopAutoplay);
+  carousel.addEventListener('mouseleave', startAutoplay);
+
+  // Keyboard navigation
+  carousel.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      const next = (currentSlide + 1) % slides.length;
+      goToSlide(next);
+      stopAutoplay();
+      startAutoplay();
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      const prev = (currentSlide - 1 + slides.length) % slides.length;
+      goToSlide(prev);
+      stopAutoplay();
+      startAutoplay();
+    }
+  });
+
+  // Set initial state
+  goToSlide(0);
+  startAutoplay();
+})();
+
+
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
   try {
